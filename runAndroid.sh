@@ -1,0 +1,1 @@
+sudo docker run -it --rm --name astrd1 --network host -v "$(pwd)/astrobee_android:/root/astrobee_android" -v "$(pwd)/.android:/root/.android" --device /dev/net/tun:/dev/net/tun --cap-add=NET_ADMIN astrodroid2 /root/astrobee_android/scripts/launch_emulator.sh -n
